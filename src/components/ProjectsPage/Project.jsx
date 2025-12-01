@@ -28,7 +28,7 @@ function Project() {
                             className="w-full h-full object-cover rounded-3xl" />
 
                         {/* Bottom Location Box */}
-                        <div className="absolute bottom-0 left-0 w-full px-5 py-3 rounded-b-2xl bg-black/40 backdrop-blur-lg text-white">
+                        <div className="absolute bottom-0 left-0 w-full px-5 py-3 rounded-b-2xl bg-black/40 backdrop-blur-sm text-white">
                             <p className="font-medium text-xl">
                                 Anantara Zanzibar Resort and Residences
                             </p>
