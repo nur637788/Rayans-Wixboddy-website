@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Home() {
     return (
         <div>
-            <div className='bg-[url("./images/home/hero.png")] bg-cover bg-center w-screen min-h-screen text-white'>
+            <div className='bg-[url("/images/home/hero.png")] bg-cover bg-center w-screen min-h-screen text-white'>
 
                 <p className='text-4xl font-medium absolute bottom-0 left-20'>DESIGNING <br />
                     SPACES WITH</p>
