@@ -43,10 +43,10 @@ function Contact1() {
     };
 
     return (
-        <div className="px-5 md:px-10 lg:px-15 xl:px-20 py-10">
-            <h3>Let’s Build Something Extraordinary</h3>
-            <p>Whether you're interested in investment, collaboration, or just learning more — our team is here to support your journey.</p>
-            <div className=" bg-[url('/images/home/hero.png')] bg-cover bg-center">
+        <div className="px-5 md:px-10 lg:px-15 xl:px-20 py-10 ">
+            <h3 className="text-3xl font-medium">Let’s Build Something Extraordinary</h3>
+            <p className="text-sm text-[#56606E] pb-3">Whether you're interested in investment, collaboration, or just learning more — our team is here to support your journey.</p>
+            <div className=" bg-[url('/images/home/hero.png')] bg-cover bg-center w-full rounded-md">
                 <div className="hero-content ">
 
                     <div className="card w-full max-w-md shadow-2xl  bg-gray-400/50 text-white rounded-xl">
