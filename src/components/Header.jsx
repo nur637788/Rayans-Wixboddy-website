@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
 function Header() {
@@ -31,9 +31,7 @@ function Header() {
                 </div>
 
                 {/* LOGO */}
-
-
-                <img src="./images/home/logo.png" alt="" />
+                <Link to='/'> <img src="./images/home/logo.png" alt="" /></Link>
                 <button
                     className="md:hidden text-2xl text-end"
                     onClick={() => setOpen(!open)}>
@@ -46,29 +44,25 @@ function Header() {
                 <div className="hidden md:flex gap-5">
                     <NavLink
                         to="/infinityF"
-                        className={({ isActive }) => (isActive ? "underline underline-offset-6 font-medium" : "text-gray-300")}
-                    >
+                        className={({ isActive }) => (isActive ? "underline underline-offset-6 font-medium" : "text-gray-300")}>
                         Infinity Foundation
                     </NavLink>
 
                     <NavLink
                         to="/news"
-                        className={({ isActive }) => (isActive ? "underline underline-offset-6 font-medium" : "text-gray-300")}
-                    >
+                        className={({ isActive }) => (isActive ? "underline underline-offset-6 font-medium" : "text-gray-300")}>
                         News
                     </NavLink>
 
                     <NavLink
                         to="/about"
-                        className={({ isActive }) => (isActive ? "underline underline-offset-6 font-medium" : "text-gray-300")}
-                    >
+                        className={({ isActive }) => (isActive ? "underline underline-offset-6 font-medium" : "text-gray-300")}>
                         About Us
                     </NavLink>
 
                     <NavLink
                         to="/contact"
-                        className={({ isActive }) => (isActive ? "underline underline-offset-6 font-medium" : "text-gray-300")}
-                    >
+                        className={({ isActive }) => (isActive ? "underline underline-offset-6 font-medium" : "text-gray-300")}>
                         Contact Us
                     </NavLink>
                 </div>

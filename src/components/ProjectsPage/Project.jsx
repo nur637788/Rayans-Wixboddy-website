@@ -134,7 +134,7 @@ function Project() {
             </section>
 
             {/* Button */}
-            <Link to='' className='flex items-center justify-center py-5'>
+            <Link to='/moreProjects' className='flex items-center justify-center py-5'>
                 <button className='bg-black text-sm px-10 py-2 rounded-md text-white  hover:scale-95 transition-all duration-300 cursor-pointer'>Veiw More ↓</button>
             </ Link>
             <div className='bg-black max-w-lg m-auto rounded-md my-5'>

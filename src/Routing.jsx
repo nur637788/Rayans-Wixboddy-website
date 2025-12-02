@@ -11,6 +11,9 @@ import News from './Pages/News'
 import About from './Pages/About'
 import Contact from './Pages/Contact'
 import NewsDetails from "./components/NewsPage/NewsDetails";
+import Careers from "./components/ContactPage/Careers";
+import AboutTeam from "./components/AboutPage/AboutTeam";
+import MoreProjects from "./components/ProjectsPage/MoreProjects";
 
 
 function Routing() {
@@ -26,6 +29,10 @@ function Routing() {
                 {
                     path: '/projects',
                     element: <Projects></Projects>
+                },
+                {
+                    path: '/moreProjects',
+                    element: <MoreProjects></MoreProjects>
                 },
                 {
                     path: '/massage',
@@ -48,10 +55,17 @@ function Routing() {
                     element: <About></About>
                 },
                 {
+                    path: '/aboutTeam',
+                    element: <AboutTeam></AboutTeam>
+                },
+                {
                     path: '/contact',
                     element: <Contact></Contact>
                 },
-
+                {
+                    path: '/careers',
+                    element: <Careers></Careers>
+                },
             ]
         },
     ]);

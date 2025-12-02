@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const FeaturedWorks = () => {
     const data = [
@@ -46,9 +47,11 @@ const FeaturedWorks = () => {
                     </p>
                 </div>
 
-                <button className="hidden md:block bg-black text-white px-5 py-2 rounded-md hover:bg-black/80 transition">
-                    View Our Work →
-                </button>
+                <Link to='/projects'>
+                    <button className="hidden md:block bg-black text-white px-5 py-2 rounded-md hover:scale-95 transition-all duration-300 cursor-pointer">
+                        View Our Work →
+                    </button>
+                </Link>
             </div>
 
             {/* Grid Layout */}
@@ -81,7 +84,7 @@ const FeatureCard = ({ item }) => {
                 <img
                     src={item.image}
                     alt={item.title}
-                    className="w-full h-[260px] md:h-[350px] lg:h-[380px] object-cover hover:scale-105 transition-all duration-500"/>
+                    className="w-full h-[260px] md:h-[350px] lg:h-[380px] object-cover hover:scale-105 transition-all duration-500" />
             </div>
 
             <p className="text-xs font-semibold text-gray-500 mt-3 tracking-widest">

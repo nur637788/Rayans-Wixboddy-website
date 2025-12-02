@@ -1,0 +1,121 @@
+import React from 'react'
+
+function MoreProjects() {
+    const items = [
+        {
+            id: 1,
+            title: "JUNGLE TRAIL",
+            img: "/images/projects/icon-1.png"
+        },
+        {
+            id: 2,
+            title: "OUTSIDE CINEMA",
+            img: "/images/projects/icon-2.png"
+        },
+        {
+            id: 3,
+            title: "OUTDOOR GYM",
+            img: "/images/projects/icon-3.png"
+        },
+        {
+            id: 4,
+            title: "OUTDOOR GYM",
+            img: "/images/projects/icon-4.png"
+        },
+        {
+            id: 5,
+            title: "KIDS PLAY AREA",
+            img: "/images/projects/icon-5.png"
+        },
+        {
+            id: 6,
+            title: "BARBECUE AREA",
+            img: "/images/projects/icon-6.png"
+        },
+        {
+            id: 7,
+            title: "PICNIC LAWN",
+            img: "/images/projects/icon-7.png"
+        },
+        {
+            id: 8,
+            title: "JUNGLE TRAIL",
+            img: "/images/projects/icon-8.png"
+        },
+    ]
+    return (
+        <div>
+            <div className='bg-[url("/images/projects/hero.png")] bg-cover bg-center w-screen  text-white'>
+                <p className='text-white font-bold text-xl flex items-center justify-center h-screen px-5 text-center'>Anantara Zanzibar Resort and Residences</p>
+            </div>
+            <section className='bg-[#FFFEF2] px-5 md:px-10 lg:px-15 xl:px-20 py-10'>
+                <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
+                    <div>
+                        <h2 className='text-2xl font-bold pb-2'>About the Project</h2>
+                        <p>Infinity Aquamont by Infinity Development redefines coastal luxury in the heart of Downtown Umm Al Quwain. Nestled along an impressive 11-kilometer stretch of shoreline—featuring 7 kilometers of untouched beaches and thoughtfully designed beach parks—this exclusive waterfront community offers a rare blend of tranquility, spaciousness, and refined living.
+                            Discover beautifully designed 1- and 2-bedroom seaside residences, as well as spacious 3-bedroom duplexes, each crafted to reflect the essence of oceanfront life. From the gentle rhythm of the waves to the ever-changing play of natural light, every home invites a deep connection to the sea.
+                        </p>
+                    </div>
+                    <img src="/images/projects/image-2.png" alt="" />
+                </div>
+                <div>
+                    <h2 className='text-2xl font-bold py-5 text-center mt-10'>A Visual Symphony</h2>
+                    <img src="/images/projects/image-3.png" alt="" className='h-70 w-screen' />
+                </div>
+            </section>
+            <section className='bg-[#B8B8B833] px-5 md:px-10 lg:px-15 xl:px-20 py-10'>
+                <h2 className='text-2xl font-bold pb-10 text-center'>Floor Plan</h2>
+                <div className='grid grid-cols-1 md:grid-cols-2 items-center gap-5'>
+                    <div className='space-y-4'>
+                        <h3 className='text-2xl font-semibold'>1 Bedroom Apartment  (Type D)</h3>
+                        <p><b>UNIT:</b> 1 BEDROOM + 1 POWDER ROOM + BALCONY</p>
+                        <p><b>SUITE:</b> 494.49 SQ.FT</p>
+                        <p><b>BALCONY:</b> 90.22 SQ.FT</p>
+                        <p><b>TOTAL:</b> 580.22 SQ.FT</p>
+                    </div>
+                    <img src="/images/projects/image-4.png" alt="" />
+                </div >
+            </section >
+
+            <section className='bg-[#FFFEF2] px-5 md:px-10 lg:px-15 xl:px-20 py-10'>
+                <h2 className='text-2xl font-bold text-center pb-5'>Curated Luxury Amenities, Crafted for Elevated Living</h2>
+                <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4'>
+                    {
+                        items.map((item) => (
+                            <div key={item.id} className='bg-[#B8B8B833] p-4 rounded-md hover:shadow-sm'>
+                                <img src={item.img} alt="" className='m-auto' />
+                                <p className='text-center pt-3'>{item.title}</p>
+                            </div>
+                        ))
+                    }
+                </div>
+            </section>
+            <section className='bg-[#B8B8B833] px-5 md:px-10 lg:px-15 xl:px-20 py-10'>
+                <h2 className='text-2xl font-bold text-center pb-5'>Project Locations</h2>
+                <img src="/images/projects/map-2.png" alt="" className='rounded-md' />
+            </section>
+            <section className='px-5 md:px-10 lg:px-15 xl:px-20 py-10'>
+                <div className='bg-[#B8B8B833] p-4 flex gap-3 justify-evenly m-auto'>
+                    <div>
+                        <img src="/images/projects/dubai.png" alt="" className='h-18 w-18 rounded-full' />
+                        <h5>DUBAI</h5>
+                        <p className='text-sm text-gray-400'>40 MINS</p>
+                    </div>
+                    <div className=''>
+                        <img src="/images/projects/dubai.png" alt="" className='h-18 w-18 rounded-full' />
+                        <h5>DUBAI</h5>
+                        <p className='text-sm text-gray-400'>40 MINS</p>
+                    </div>
+                    <div>
+                        <img src="/images/projects/dubai.png" alt="" className='h-18 w-18 rounded-full' />
+                        <h5>DUBAI</h5>
+                        <p className='text-sm text-gray-400'>40 MINS</p>
+                    </div>
+                </div>
+            </section>
+
+        </div >
+    )
+}
+
+export default MoreProjects

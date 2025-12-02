@@ -60,17 +60,15 @@ function Investment() {
 
                 <div className='flex flex-col text-center'>
                     <p>Join us on the path to prosperity. Contact us today to explore these unique opportunities.</p>
-                    <Link to='' className='flex items-center justify-center py-5'>
-                        <button className='bg-white text-sm px-10 py-2 rounded-md text-black  hover:scale-95 transition-all duration-300 cursor-pointer'>Contact Us →</button>
+                    <Link to='/contact' className='w-fit m-auto'>
+                        <button className='bg-white text-sm px-10 py-2 my-5 rounded-md text-black  hover:scale-95 transition-all duration-300 cursor-pointer'>Contact Us →</button>
                     </ Link>
                 </div>
             </div>
             {/* Button */}
-            <div className='bg-black max-w-lg m-auto rounded-md my-5 mt-10'>
-                <p className='text-white text-center pt-3'>Ready to create something extraordinary?</p>
-                <Link to='' className='flex items-center justify-center py-5'>
-                    <button className='bg-white text-sm px-10 py-2 rounded-md text-black  hover:scale-95 transition-all duration-300 cursor-pointer'>Get In Touch →</button>
-                </ Link>
+            <div className='bg-black max-w-lg rounded-md mt-10 py-5 text-center space-y-3 m-auto'>
+                <p className='text-white text-center'>Ready to create something extraordinary?</p>
+                <Link to='' className='bg-white text-sm px-6 py-2 rounded-md text-black  hover:scale-95 transition-all duration-300 cursor-pointer'>Get In Touch →</Link>
             </div>
         </section>
     )

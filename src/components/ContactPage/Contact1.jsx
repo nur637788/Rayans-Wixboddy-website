@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Contact1() {
 
@@ -44,7 +45,12 @@ function Contact1() {
 
     return (
         <div className="px-5 md:px-10 lg:px-15 xl:px-20 py-10 ">
-            <h3 className="text-3xl font-medium">Let’s Build Something Extraordinary</h3>
+            <div className="flex justify-between gap-4">
+                <h3 className="text-3xl font-medium">Let’s Build Something Extraordinary</h3>
+                <Link to='/careers'>
+                    <button className='bg-black text-sm px-4 py-2 mt-5 rounded-md text-white  hover:scale-95 transition-all duration-300 cursor-pointer'>Get Career's →</button>
+                </ Link>
+            </div>
             <p className="text-sm text-[#56606E] pb-3">Whether you're interested in investment, collaboration, or just learning more — our team is here to support your journey.</p>
             <div className=" bg-[url('/images/home/hero.png')] bg-cover bg-center w-full rounded-md">
                 <div className="hero-content ">
@@ -145,6 +151,28 @@ function Contact1() {
                         </form>
                     </div>
 
+                </div>
+            </div>
+            {/* Map Area */}
+            <div>
+                <h3 className="text-3xl font-semibold text-center py-8">Our Office</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div className="space-y-1 border rounded-md p-4">
+                        <h4 className="text-xl font-medium">Dubai Office</h4>
+                        <p className="text-sm text-[#919EAB]">Office 2008, 20th Floor, Infinity Tower, Dubai, UAE</p>
+                        <img src="/images/contact/map-1.png" alt="" className="rounded-md" />
+                        <Link to=''>
+                            <button className='bg-black text-sm px-4 py-2 mt-5 rounded-md text-white  hover:scale-95 transition-all duration-300 cursor-pointer'>Get Directions →</button>
+                        </ Link>
+                    </div>
+                    <div className="space-y-1 border rounded-md p-4">
+                        <h4 className="text-xl font-medium">Zanzibar Office</h4>
+                        <p className="text-sm text-[#919EAB]">Building No 869, Malindi Funguni Street, Stone Town, Zanzibar</p>
+                        <img src="/images/contact/map-1.png" alt="" className="rounded-md" />
+                        <Link to=''>
+                            <button className='bg-black text-sm px-4 py-2 mt-5 rounded-md text-white  hover:scale-95 transition-all duration-300 cursor-pointer'>Get Directions →</button>
+                        </ Link>
+                    </div>
                 </div>
             </div>
         </div>

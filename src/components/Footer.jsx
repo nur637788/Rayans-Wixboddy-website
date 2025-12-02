@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { CiLocationOn } from 'react-icons/ci'
 import { FaEnvelope, FaInstagram, FaWhatsapp } from 'react-icons/fa'
 import { FiPhone } from 'react-icons/fi'
+import { Link } from 'react-router-dom'
 
 function Footer() {
     const [email, setEmail] = useState("")
@@ -23,13 +24,13 @@ function Footer() {
     };
 
     return (
-        <div className="px-5 md:px-10 lg:px-15 xl:px-20 py-5 bg-black">
+        <div className="px-5 md:px-10 lg:px-15 xl:px-20 py-5 bg-black ">
             <footer className="footer text-base-content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between gap-5">
 
                 {/* Logo & Follow */}
-                <nav className='w-60'>
-                    <img src="/images/home/logo.png" alt="" />
-                    <p className='text-sm'>
+                <nav className='w-60 text-white'>
+                    <Link to='/'><img src="/images/home/logo.png" alt="" /></Link>
+                    <p className='text-sm text-white'>
                         Crafting unparalleled luxury experiences through innovative design
                         and meticulous attention to detail.
                     </p>
@@ -42,7 +43,7 @@ function Footer() {
                 </nav>
 
                 {/* Quick Links */}
-                <nav>
+                <nav className='text-white'>
                     <h6 className="text-white font-semibold text-xl">Quick Links</h6>
                     <a className="link link-hover">Projects</a>
                     <a className="link link-hover">About us</a>
@@ -51,7 +52,7 @@ function Footer() {
                 </nav>
 
                 {/* Contact */}
-                <nav className='w-60'>
+                <nav className='w-60 text-white'>
                     <h6 className="text-white font-semibold text-xl">Contact Us</h6>
 
                     <div className='flex gap-2'>
@@ -79,7 +80,7 @@ function Footer() {
                 <form onSubmit={handleSubmit}>
                     <h6 className="text-white font-semibold text-xl">Newsletter</h6>
                     <fieldset className="w-80">
-                        <p className='pb-3'>Stay updated with our latest projects and news</p>
+                        <p className='pb-3 text-white'>Stay updated with our latest projects and news</p>
                         <div className="join">
                             <input
                                 type="text"

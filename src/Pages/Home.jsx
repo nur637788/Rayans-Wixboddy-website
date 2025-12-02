@@ -14,7 +14,7 @@ function Home() {
                 <div className='bg-[#FFFFFF4D] max-w-90 rounded p-3 absolute right-10 bottom-0 '>
                     <h2>INTENT + <br /> IMPACT</h2>
                     <p className='text-sm text-[#DFE3E8]'>We create architectural experiences that transcend the ordinary. Each project is a careful balance of form, function, and the human experience.</p>
-                    <Link to='/'>
+                    <Link to='/projects'>
                         <button className='mt-3 bg-black text-sm px-2 py-2 rounded text-white  hover:scale-95 transition-all duration-300 cursor-pointer'>View Our Work →</button>
                     </Link>
                 </div>
