@@ -1,6 +1,8 @@
 import React from 'react'
 import Hero from '../components/HomePage/Hero'
 import { Link } from 'react-router-dom';
+import OurValue from '../components/HomePage/OurValue';
+import Investment from '../components/HomePage/Investment';
 
 function Home() {
     return (
@@ -17,10 +19,9 @@ function Home() {
                     </Link>
                 </div>
             </div>
-
-
-
             <Hero />
+            <OurValue />
+            <Investment />
         </div>
     )
 }
