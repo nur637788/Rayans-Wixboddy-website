@@ -10,10 +10,12 @@ function App() {
     <div className='bg-white text-black'>
       <Header />
 
-      <div className='flex justify-center items-center min-h-screen'>
+      <div className='m-auto min-h-screen max-w-[1920px] '>
         <Outlet />
       </div>
-      <Footer />
+      <div className='m-auto max-w-[1920px] '>
+        <Footer />
+      </div>
     </div>
   )
 }

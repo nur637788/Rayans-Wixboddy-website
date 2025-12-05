@@ -49,16 +49,16 @@ function News() {
     ];
     return (
         <div data-aos='zoom-in' >
-            <section className='bg-[#FFFEF2] px-5 md:px-10 lg:px-15 xl:px-20 py-10'>
+            <section className='bg-[#FFFEF2] px-5 md:px-10 lg:px-15 xl:px-20 py-10 mt-25'>
                 <div className='space-y-2 mb-10'>
                     <div className='flex justify-between items-center gap-5'>
-                        <h1 className='text-3xl md:text-4xl font-bold'>News</h1>
+                        <h1 className='text-3xl md:text-[48px]'>News</h1>
                         <Link to='/newsDetails'>
-                            <button className='bg-black text-sm px-4 py-2 rounded-md text-white  hover:scale-95 transition-all duration-300 cursor-pointer '>View All Blog →</button>
+                            <button className='bg-black px-6 py-4 rounded-md text-white  hover:scale-95 transition-all duration-300 cursor-pointer '>View All Blog →</button>
                         </Link>
                     </div>
                     <div className='flex justify-between items-center gap-5'>
-                        <p className='text-[#637381] max-w-3xl text-sm'>Tips for a Successful Blog: To thrive, focus on your niche and engage your audience with valuable content. Consistency matters, so stick to a posting schedule. Promote your posts on social media to expand your reach and boost interaction!</p>
+                        <p className='text-[#637381] max-w-3xl text-[18px]'>Tips for a Successful Blog: To thrive, focus on your niche and engage your audience with valuable content. Consistency matters, so stick to a posting schedule. Promote your posts on social media to expand your reach and boost interaction!</p>
 
                     </div>
                 </div>
@@ -67,14 +67,14 @@ function News() {
                         <div key={p.id} className=''>
                             <img src={p.img} alt={p.title} className='rounded-md' />
                             <div className='space-y-3 py-3'>
-                                <div className='flex gap-4 space-x-4 text-sm'>
+                                <div className='flex gap-4 space-x-4'>
                                     <b>BLOG </b>
-                                    <li className='text-gray-600'>{p.date}</li>
-                                    <li className='uppercase text-gray-600'>{p.time}</li>
+                                    <li className='text-[]#637381'>{p.date}</li>
+                                    <li className='uppercase text-[#637381]'>{p.time}</li>
                                 </div>
-                                <h5 className=' text-2xl font-medium'>{p.title}</h5>
+                                <h5 className=' text-[32px] font-medium text-[#0A0A0A]' >{p.title}</h5>
                                 <Link to='/newsDetails'>
-                                    <button className='bg-black text-sm px-2 py-1 rounded-md text-white  hover:scale-95 transition-all duration-300 cursor-pointer'>Read Post →</button>
+                                    <button className='bg-black px-4 py-3 rounded-lg text-white  hover:scale-95 transition-all duration-300 cursor-pointer'>Read Post →</button>
                                 </Link>
                             </div>
                         </div>

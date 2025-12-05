@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const FeaturedWorks = () => {
+const Hero = () => {
     const data = [
         {
             category: "CUSTOM BUILD",
@@ -34,13 +34,13 @@ const FeaturedWorks = () => {
     ];
 
     return (
-        <div className="bg-[#FFFEF2] px-5 md:px-10 lg:px-20 py-16">
+        <div className="bg-[#FFFEF2] px-5 md:px-10 lg:px-15 xl:px-20 py-10  ">
 
             {/* Heading Section */}
-            <div className="flex items-start justify-between mb-10">
+            <div className="flex items-start justify-between mb-10  m-auto">
                 <div>
-                    <h2 className="text-4xl md:text-5xl font-bold">Featured Works</h2>
-                    <p className="text-gray-600 mt-3 max-w-xl">
+                    <h2 className="text-4xl md:text-5xl lg:text-7xl font-bold">Featured Works</h2>
+                    <p className="text-[#637381] text-[18px] mt-3 max-w-xl">
                         We are committed to eco-friendly design, creating spaces that respect
                         the environment and engage the community. Our sustainable practices
                         benefit both nature and the neighborhoods we serve.
@@ -48,53 +48,35 @@ const FeaturedWorks = () => {
                 </div>
 
                 <Link to='/projects'>
-                    <button className="hidden md:block bg-black text-white px-5 py-2 rounded-md hover:scale-95 transition-all duration-300 cursor-pointer">
+                    <button className='mt-3 bg-[#0A0A0A] hover:bg-[#000000] text-sm lg:text-base px-8 py-4 rounded-lg text-white  hover:scale-95 transition-all duration-300 cursor-pointer'>
                         View Our Work →
                     </button>
                 </Link>
             </div>
+            <div className="flex flex-wrap justify-between  gap-5 ">
+                {
+                    data.map((item) => (
+                        <div className="">
+                            <div className="overflow-hidden  ">
+                                <img
+                                    src={item.image}
+                                    alt={item.title}
+                                    className=" hover:scale-105 transition-all duration-500 rounded-lg "/>
+                            </div>
 
-            {/* Grid Layout */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            <p className=" font-semibold text-[#637381] mt-3 tracking-widest">
+                                {item.category}
+                            </p>
 
-                {/* Left Large Image */}
-                <div className="md:col-span-2">
-                    <FeatureCard item={data[0]} />
-                </div>
-
-                {/* Right Top Medium */}
-                <FeatureCard item={data[1]} />
-
-                {/* Left Bottom Small */}
-                <FeatureCard item={data[2]} />
-
-                {/* Right Bottom Medium */}
-                <div className="md:col-span-2">
-                    <FeatureCard item={data[3]} />
-                </div>
+                            <h3 className="text-xl lg:text-3xl font-medium mt-1">{item.title}</h3>
+                            <p className="text-xl text-[#637381]">{item.location}</p>
+                        </div>
+                    ))
+                }
             </div>
         </div>
     );
 };
 
-const FeatureCard = ({ item }) => {
-    return (
-        <div className="w-full">
-            <div className="overflow-hidden rounded-2xl shadow-sm">
-                <img
-                    src={item.image}
-                    alt={item.title}
-                    className="w-full h-[260px] md:h-[350px] lg:h-[380px] object-cover hover:scale-105 transition-all duration-500" />
-            </div>
 
-            <p className="text-xs font-semibold text-gray-500 mt-3 tracking-widest">
-                {item.category}
-            </p>
-
-            <h3 className="text-xl md:text-2xl font-bold mt-1">{item.title}</h3>
-            <p className="text-sm text-gray-600">{item.location}</p>
-        </div>
-    );
-};
-
-export default FeaturedWorks;
+export default Hero

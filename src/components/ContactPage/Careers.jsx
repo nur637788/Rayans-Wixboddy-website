@@ -57,7 +57,7 @@ function Careers() {
 
     ]
     return (
-        <section>
+        <section className='mt-25'>
             <div className='bg-[url("/images/contact/hero-1.png")] bg-cover bg-center w-screen min-h-screen text-white'>
                 {/* <div className='max-w-90 rounded p-3 absolute right-10 bottom-0 '>
                     <h4 className='text-2xl font-medium'>CAREER OPPORTUNITIES AT
@@ -66,7 +66,7 @@ function Careers() {
                         If you share our passion for envisioning the extraordinary and turning it into reality, we welcome you to explore opportunities to become part of the Infinity Development journey, where your talent can help redefine the landscape of tomorrow.</p>
                 </div> */}
             </div>
-            {/* APPLY NOW AREA */}
+            {/* APPLY AREA */}
             <div className="px-5 md:px-10 lg:px-20 py-14 bg-[#FFFEF2]">
                 <h2 className="text-2xl font-bold text-gray-900 text-center">
                     APPLY NOW
@@ -81,7 +81,7 @@ function Careers() {
                             className="bg-white px-3 md:px-5 py-4 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition-all duration-300">
                             <div className="flex items-center justify-between">
                                 <div>
-                                    <h4 className="text-lg md:text-xl font-semibold text-gray-900">
+                                    <h4 className="text-lg md:text-2xl font-semibold text-gray-900">
                                         {apply.title}</h4>
                                     <p className="text-gray-600 mt-1">{apply.time}</p>
                                 </div>
