@@ -104,8 +104,8 @@ function Footer() {
                     </form>
                 </footer>
             </div>
-            <hr className='text-[#acacaa]' />
-            <p className='text-[#acacaa] text-center py-4'>© 2021-2025, infinity development. All Rights Reserved.</p>
+            <hr className='border-b border-[#474747]' />
+            <p className='text-[#474747] text-center py-4'>© 2021-2025, infinity development. All Rights Reserved.</p>
         </div>
     );
 }
